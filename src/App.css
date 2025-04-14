@@ -1,0 +1,14 @@
+/* App.css */
+body {
+    background-color: #121212; /* Fondo general */
+    color: white;
+    font-family: MiFuentePersonalizada, Arial ,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MiFuentePersonalizada'; /* El nombre que usarás en CSS */
+    src: url('./assets/fonts/Pixellari.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

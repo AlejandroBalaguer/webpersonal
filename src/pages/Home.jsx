@@ -2,12 +2,12 @@ import {Slide, Zoom} from "react-awesome-reveal";
 import React from "react";
 
 const Home = () => (
-    <main className="container py-5 bg-black">
+    <main className="container py-5">
         <section id="home" className="text-center py-5 px-5">
             <Zoom>
-                <h1 className="text-success display-3">Tu Nombre</h1>
-                <p className="lead">Desarrollador Web | Programador | Freelancer</p>
-                <img src="https://via.placeholder.com/120" alt="Foto" className="rounded-circle border border-success mt-3" />
+                <h1 className="text-success display-3">Alejandro Balaguer Moroño</h1>
+                <p className="lead">Desarrollador Web | Desarrollador IA | Big Data</p>
+                <img src="/images/logo.jpg" alt="Foto" className="rounded-circle border border-success mt-3" />
             </Zoom>
         </section>
         <section id="about" className="container py-5">
@@ -20,8 +20,8 @@ const Home = () => (
             <Slide direction="right">
                 <h2 className="text-info">Experiencia</h2>
                 <ul className="list-unstyled">
-                    <li><strong>Freelancer</strong> - Desarrollo de sitios web - 2022 - Presente</li>
-                    <li><strong>Startup X</strong> - Frontend Developer - 2021 - 2022</li>
+                    <li><strong>Borjamotor S.A.</strong> - Desarrollo web - 2025 - Presente</li>
+                    <li><strong>Grupo SpaServ</strong> - Administrador de sistemas - 2023 - 2024</li>
                 </ul>
             </Slide>
         </section>
@@ -29,8 +29,9 @@ const Home = () => (
             <Slide direction="left">
                 <h2 className="text-info">Educación</h2>
                 <ul className="list-unstyled">
-                    <li><strong>Universidad de la Tecnología</strong> - Ingeniería en Sistemas - 2017 - 2021</li>
-                    <li><strong>Curso Full Stack</strong> - Academia Online - 2022</li>
+                    <li><strong>Especializacion GS - Desarrollo IA y Big Data</strong> - IES San Vicente - 2025 - 2026</li>
+                    <li><strong>FPGS - Desarollo de Aplicaciones Web</strong> - IES MARE NOSTRUM - 2023 - 2025</li>
+                    <li><strong>FPGM - Sistemas microinformaticos y redes</strong> - IES MARE NOSTRUM - 2021 - 2023</li>
                 </ul>
             </Slide>
         </section>

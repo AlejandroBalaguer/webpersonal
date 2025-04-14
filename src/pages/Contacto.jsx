@@ -3,10 +3,9 @@ import React from "react";
 
 const Contact = () => (
     <section id="contact" className="container py-5 bg-gray-100">
-        <Fade direction="up">
+        <Fade cascade damping={0.2}>
             <h2 className="text-info">Contacto</h2>
-            <p>Email: <span className="text-success">tuemail@ejemplo.com</span></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noreferrer" className="text-decoration-none text-success">linkedin.com/in/tuusuario</a></p>
+            <p>Email: <a href="mailto:alejandrobalaguerm@gmail.com" className="text-decoration-none text-success"><span className="text-success">alejandrobalaguerm@gmail.com</span></a></p>
             <form>
                 <div className="mb-3">
                     <label className="form-label">Nombre</label>
