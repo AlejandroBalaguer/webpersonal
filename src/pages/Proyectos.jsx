@@ -27,7 +27,7 @@ const Projects = () => {
                 <h2 className="text-info">Clasificador de Perros y Gatos</h2>
                 <p>
                     Esta es una IA sencilla que clasifica la imagen que le pases aquí abajo, y te dirá si es un gato
-                    o un perro. Tiene una precisión del +80%, todavía sigue en desarrollo.
+                    o un perro. Tiene una precisión del +90%, todavía sigue en desarrollo.
                 </p>
                 <p className="text-success"><b>Funcionamiento:</b></p>
                 <p>

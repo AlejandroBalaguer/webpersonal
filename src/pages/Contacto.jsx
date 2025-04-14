@@ -12,7 +12,7 @@ const Contact = () => (
             </p>
 
             <p>
-                Responderé lo antes posible, por favor sed pacientes.
+                Responderé lo antes posible.
             </p>
 
             <p>

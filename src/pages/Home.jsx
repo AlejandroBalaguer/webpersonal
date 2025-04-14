@@ -1,4 +1,4 @@
-import {Slide, Zoom} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 import React from "react";
 
 const Home = () => (
@@ -19,7 +19,7 @@ const Home = () => (
                 </div>
 
                 <div className="col-md-7 text-white">
-                    <Slide direction="right">
+                    <Zoom>
                         <p className="fs-5">
                             Bienvenido a mi web personal. Soy un desarrollador especializado en soluciones web modernas e inteligencia artificial.
                         </p>
@@ -39,7 +39,7 @@ const Home = () => (
                         <blockquote className="mt-4 fst-italic">
                             “Transformando ideas en soluciones digitales.”
                         </blockquote>
-                    </Slide>
+                    </Zoom>
                 </div>
             </div>
         </section>
