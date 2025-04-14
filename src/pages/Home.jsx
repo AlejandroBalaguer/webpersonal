@@ -7,7 +7,7 @@ const Home = () => (
             <Zoom>
                 <h1 className="text-success display-3">Alejandro Balaguer Moroño</h1>
                 <p className="lead">Desarrollador Web | Desarrollador IA | Big Data</p>
-                <img src="/images/logo.jpg" alt="Foto" className="rounded-circle border border-success mt-3" />
+                <img src="/images/logo.jpg" alt="Foto" className="rounded-circle border border-success mt-3 img-fluid" />
             </Zoom>
         </section>
         <section id="about" className="container py-5">

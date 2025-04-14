@@ -5,7 +5,6 @@ const Header = () => (
         <div className="container">
             <a className="navbar-brand text-success" href="/">{'<MiCV />'}</a>
             <ul className="navbar-nav ms-auto d-flex flex-row gap-3">
-                <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                 <li className="nav-item"><a className="nav-link" href="/proyectos">Proyectos</a></li>
                 <li className="nav-item"><a className="nav-link" href="/contacto">Contacto</a></li>
             </ul>
