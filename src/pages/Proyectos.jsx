@@ -21,7 +21,7 @@ const Projects = () => {
 
     return(
         <main id="projects" className="container py-5">
-            <Fade cascade damping={0.2}>
+            <Fade cascade damping={0.1}>
                 <h1 className="text-info text-center">Proyectos</h1>
 
                 <h2 className="text-info">Clasificador de Perros y Gatos</h2>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => (
     <main id="contact" className="container py-5 bg-gray-100">
-        <Fade cascade damping={0.2}>
+        <Fade cascade damping={0.1}>
             <h1 className="text-info text-center">Contacto</h1>
 
             <p>
