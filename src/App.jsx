@@ -7,12 +7,14 @@ import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Proyectos from './pages/Proyectos.jsx';
 import Contacto from './pages/Contacto.jsx'
+import Curriculum from './pages/Curriculum.jsx';
 
 const App = () => (
     <Router>
         <Header/>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/curriculum" element={<Curriculum />} />
                 <Route path="/proyectos" element={<Proyectos />} />
                 <Route path="/contacto" element={<Contacto />} />
             </Routes>

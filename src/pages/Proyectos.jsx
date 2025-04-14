@@ -20,7 +20,7 @@ const Projects = () => {
     };
 
     return(
-        <main id="projects" className="container py-5">
+        <main id="projects" className="container py-5" style={{ minHeight: "100vh" }}>
             <Fade cascade damping={0.1}>
                 <h1 className="text-info text-center">Proyectos</h1>
 

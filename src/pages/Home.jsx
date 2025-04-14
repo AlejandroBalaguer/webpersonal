@@ -2,48 +2,46 @@ import {Slide, Zoom} from "react-awesome-reveal";
 import React from "react";
 
 const Home = () => (
-    <main className="container py-5">
-        <section id="home" className="text-center py-5 px-5">
-            <Zoom>
-                <img src="/images/logo.jpg" alt="Foto" className="rounded-circle border border-success mt-3 img-fluid" style={{ height: "300px" }}/>
-                <h1 className="text-success display-3">Alejandro Balaguer Moroño</h1>
-                <p className="lead">Desarrollador Web | Desarrollador IA | Big Data</p>
-            </Zoom>
-        </section>
-        <section id="about" className="container py-5">
-            <Slide direction="left">
-                <h2 className="text-info">Sobre mí</h2>
-                <p className="fst-italic">Soy un desarrollador apasionado por la tecnología, especializado en crear soluciones web modernas, eficientes y visualmente atractivas.</p>
-            </Slide>
-        </section>
-        <section id="experience" className="container py-5">
-            <Slide direction="right">
-                <h2 className="text-info">Experiencia</h2>
-                <ul className="list-unstyled">
-                    <li><strong className="text-success">Borjamotor S.A.</strong> - Desarrollo web - 2025 - Presente</li>
-                    <li><strong className="text-success">Grupo SpaServ</strong> - Administrador de sistemas - 2023 - 2024</li>
-                </ul>
-            </Slide>
-        </section>
-        <section id="education" className="container py-5">
-            <Slide direction="left">
-                <h2 className="text-info">Educación</h2>
-                <ul className="list-unstyled">
-                    <li><strong className="text-success">Especializacion GS - Desarrollo IA y Big Data</strong> - IES San Vicente - 2025 - 2026</li>
-                    <li><strong className="text-success">FPGS - Desarollo de Aplicaciones Web</strong> - IES MARE NOSTRUM - 2023 - 2025</li>
-                    <li><strong className="text-success">FPGM - Sistemas microinformaticos y redes</strong> - IES MARE NOSTRUM - 2021 - 2023</li>
-                </ul>
-            </Slide>
-        </section>
-        <section id="skills" className="container py-5">
-            <Zoom>
-                <h2 className="text-info">Habilidades</h2>
-                <ul className="list-unstyled">
-                    <li><strong className="text-success">Lenguajes:</strong> JavaScript, Python, HTML, CSS</li>
-                    <li><strong className="text-success">Frameworks:</strong> React, Node.js, Express</li>
-                    <li><strong className="text-success">Soft skills:</strong> Comunicación, liderazgo</li>
-                </ul>
-            </Zoom>
+    <main className="d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
+        <section className="card shadow border border-success bg-dark p-4">
+            <div className="row align-items-center">
+                <div className="col-md-5 text-center">
+                    <Zoom>
+                        <img
+                            src="/images/logo.jpg"
+                            alt="Alejandro Balaguer"
+                            className="rounded-circle border border-success shadow img-fluid mb-3"
+                            style={{ height: "180px" }}
+                        />
+                        <h1 className="text-success">Alejandro Balaguer Moroño</h1>
+                        <p className="lead text-white">Desarrollador Web | IA & Big Data</p>
+                    </Zoom>
+                </div>
+
+                <div className="col-md-7 text-white">
+                    <Slide direction="right">
+                        <p className="fs-5">
+                            Bienvenido a mi web personal. Soy un desarrollador especializado en soluciones web modernas e inteligencia artificial.
+                        </p>
+                        <p className="fs-5">
+                            Esta página es una carta de presentación directa para que puedas conocer rápidamente mi perfil profesional.
+                        </p>
+
+                        <div className="d-flex gap-3 mt-4 flex-wrap">
+                            <a href="/proyectos" className="btn btn-outline-success">
+                                Ver Proyectos
+                            </a>
+                            <a href="/curriculum" className="btn btn-success">
+                                Ver Currículum
+                            </a>
+                        </div>
+
+                        <blockquote className="mt-4 fst-italic">
+                            “Transformando ideas en soluciones digitales.”
+                        </blockquote>
+                    </Slide>
+                </div>
+            </div>
         </section>
     </main>
 );

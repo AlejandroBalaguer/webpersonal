@@ -2,7 +2,7 @@ import {Fade} from "react-awesome-reveal";
 import React from "react";
 
 const Contact = () => (
-    <main id="contact" className="container py-5 bg-gray-100">
+    <main id="contact" className="container py-5 bg-gray-100" style={{ minHeight: "100vh" }}>
         <Fade cascade damping={0.1}>
             <h1 className="text-info text-center">Contacto</h1>
 
