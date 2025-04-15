@@ -24,7 +24,7 @@
   "projects": "Projects",
   "classifier": "Dog and Cat Classifier",
   "classifierDesc": "This is a simple AI that classifies the image you upload as a cat or a dog. It has over 90% accuracy.",
-  "howToUse": "How to use:",
+  "howToUse": "How to use",
   "howToUseText": "Just upload your image, then click 'Classify'. The result will appear shortly.",
   "classify": "Classify",
   "analyzing": "Analyzing image...",
