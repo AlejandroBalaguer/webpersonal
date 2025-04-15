@@ -1,11 +1,13 @@
 import {Fade} from "react-awesome-reveal";
 import React, { useState } from "react";
 import axios from 'axios';
+import {useTranslation} from "react-i18next";
 
 const Projects = () => {
     const [imagen, setImagen] = useState(null);
     const [resultado, setResultado] = useState(null);
     const [cargando, setCargando] = useState(false);
+    const {t} = useTranslation();
 
     const handleSubmit = async () => {
         if (!imagen) return;
@@ -22,22 +24,20 @@ const Projects = () => {
     return(
         <main id="projects" className="container py-5" style={{ minHeight: "100vh" }}>
             <Fade cascade damping={0.1}>
-                <h1 className="text-info text-center">Proyectos</h1>
+                <h1 className="text-info text-center">{t('projects')}</h1>
 
-                <h2 className="text-info">Clasificador de Perros y Gatos</h2>
+                <h2 className="text-info">{t('classifier')}</h2>
                 <p>
-                    Esta es una IA sencilla que clasifica la imagen que le pases aquí abajo, y te dirá si es un gato
-                    o un perro. Tiene una precisión del +90%, todavía sigue en desarrollo.
+                    {t('classifierDesc')}
                 </p>
-                <p className="text-success"><b>Funcionamiento:</b></p>
+                <p className="text-success"><b>{t('howToUse')}:</b></p>
                 <p>
-                    Solamente tienes que introducir tu imagen dando click en seleccionar archivo y después dar click
-                    en el botón "Clasificar". Y en poco tiempo te lo clasificará.
+                    {t('howToUseText')}
                 </p>
                 <input type="file" onChange={(e) => setImagen(e.target.files[0])} />
-                <button className="btn btn-success mt-3" onClick={handleSubmit}>Clasificar</button>
+                <button className="btn btn-success mt-3" onClick={handleSubmit}>{t('classify')}</button>
 
-                {cargando && <p className="mt-3">Analizando imagen...</p>}
+                {cargando && <p className="mt-3">{t('analyzing')}</p>}
 
                 {resultado && (
                     <div className="mt-4">
@@ -45,10 +45,10 @@ const Projects = () => {
                     </div>
                 )}
 
-                <p className="py-2">Repositorio: <a href="https://github.com/AlejandroBalaguer/CatsvsDogs">https://github.com/AlejandroBalaguer/CatsvsDogs</a></p>
+                <p className="py-2">{t('repository')}: <a href="https://github.com/AlejandroBalaguer/CatsvsDogs">https://github.com/AlejandroBalaguer/CatsvsDogs</a></p>
 
                 <div className="mt-5">
-                    <h2 className="text-info mb-4">Páginas web en las que he trabajado</h2>
+                    <h2 className="text-info mb-4">{t('webProjects')}</h2>
                     <div className="d-flex overflow-auto gap-4 py-3 px-2">
                         <a href="https://www.h-dalicante.es" target="_blank" rel="noopener noreferrer">
                             <img src="/images/logoharley.png" alt="Harley Davidson" style={{ height: "150px" }} />

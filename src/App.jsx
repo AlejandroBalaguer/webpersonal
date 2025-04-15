@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx';
 import Proyectos from './pages/Proyectos.jsx';
 import Contacto from './pages/Contacto.jsx'
 import Curriculum from './pages/Curriculum.jsx';
+import './components/i18n.js';
 
 const App = () => (
     <Router>
