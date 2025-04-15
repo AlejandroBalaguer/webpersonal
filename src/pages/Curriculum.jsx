@@ -39,7 +39,6 @@ const Curriculum = () => {
                 <Slide direction="left">
                     <h2 className="text-info">{t('education')}</h2>
                     <ul className="list-unstyled">
-                        <li><strong className="text-success">Especializacion GS - Desarrollo IA y Big Data</strong> - IES San Vicente - 2025 - 2026</li>
                         <li><strong className="text-success">FPGS - Desarollo de Aplicaciones Web</strong> - IES Mare Nostrum - 2023 - 2025</li>
                         <li><strong className="text-success">FPGM - Sistemas microinformaticos y redes</strong> - IES Mare Nostrum - 2021 - 2023</li>
                     </ul>
@@ -49,9 +48,26 @@ const Curriculum = () => {
                 <Zoom>
                     <h2 className="text-info">{t('skills')}</h2>
                     <ul className="list-unstyled">
-                        <li><strong className="text-success">{t('languages')}:</strong> JavaScript, Python, HTML, CSS</li>
-                        <li><strong className="text-success">Frameworks:</strong> React, Node.js, Express</li>
-                        <li><strong className="text-success">{t('softSkills')}:</strong> {t('softSkillsContent')}</li>
+                        <li>
+                            <strong className="text-success">{t('languages')}:</strong>
+                            <div className="d-flex flex-wrap gap-3 mt-2">
+                                <img src="/images/logos/javascript.png" alt="JavaScript" height="40" />
+                                <img src="/images/logos/python.webp" alt="Python" height="40" />
+                                <img src="/images/logos/csharp.png" alt="Csharp" height="40" />
+                                <img src="/images/logos/html.png" alt="HTML" height="40" />
+                                <img src="/images/logos/css.png" alt="CSS" height="40" />
+                                <img src="/images/logos/mysql.png" alt="Mysql" height="40" />
+                            </div>
+                        </li>
+                        <li className="mt-4">
+                            <strong className="text-success">Frameworks:</strong>
+                            <div className="d-flex flex-wrap gap-3 mt-2">
+                                <img src="/images/logos/react.png" alt="React" height="40" />
+                                <img src="/images/logos/node.png" alt="Node.js" height="40" />
+                                <img src="/images/logos/bootstrap.png" alt="Bootstrap" height="40" />
+                                <img src="/images/logos/tailwindcss.png" alt="TailwindCSS" height="40" />
+                            </div>
+                        </li>
                     </ul>
                 </Zoom>
             </section>
