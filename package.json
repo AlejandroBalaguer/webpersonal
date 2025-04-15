@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "frontend": "vite --host",
+    "backend": "python -m uvicorn src.python.ia_gatos_perros.main:app --reload --port 8000",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
