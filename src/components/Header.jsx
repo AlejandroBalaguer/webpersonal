@@ -37,10 +37,18 @@ const Header = () => {
                             <a className="nav-link" href="/contacto">{t('contact')}</a>
                         </li>
                         <li className="nav-item justify-content-center">
+                            <label 
+                                htmlFor="language-select" 
+                                className="visually-hidden"
+                            >
+                                {t('languages')}
+                            </label>
                             <select
+                                id="language-select"
                                 className="form-select custom-language-select text-light border-success"
                                 onChange={(e) => changeLanguage(e.target.value)}
                                 value={i18n.language}
+                                aria-label={t('languages')}
                                 style={{ 
                                     width: "auto", 
                                     backgroundColor: "#212529",

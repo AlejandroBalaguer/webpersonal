@@ -32,6 +32,25 @@
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
   outline: 0 !important;
 }
+
+/* Clase para ocultar visualmente elementos pero mantenerlos accesibles para lectores de pantalla */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Foco mejorado para accesibilidad */
+:focus-visible {
+  outline: 3px solid #28a745 !important;
+  outline-offset: 2px !important;
+}
 body {
     background-image: url("../src/assets/background.jpg");
     background-repeat: no-repeat;        /* Evita que se repita */
