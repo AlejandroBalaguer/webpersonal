@@ -62,16 +62,36 @@ const Projects = () => {
                 <div className="mt-5">
                     <h2 className="text-info mb-4">{t('webProjects')}</h2>
                     <div className="d-flex overflow-auto gap-4 py-3 px-2">
-                        <a href="https://www.h-dalicante.es" target="_blank" rel="noopener noreferrer">
+                        <a 
+                            href="https://www.h-dalicante.es" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Sitio web de Harley Davidson Alicante"
+                        >
                             <img src="/images/logoharley.png" alt="Harley Davidson" style={{ height: "150px" }} />
                         </a>
-                        <a href="https://www.mgborjamotor.es" target="_blank" rel="noopener noreferrer">
+                        <a 
+                            href="https://www.mgborjamotor.es" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Sitio web de MG Motor"
+                        >
                             <img src="/images/logomg.png" alt="MG Motor" style={{ height: "150px" }} />
                         </a>
-                        <a href="https://www.omodayjaecooborjamotor.es/" target="_blank" rel="noopener noreferrer">
+                        <a 
+                            href="https://www.omodayjaecooborjamotor.es/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Sitio web de Omoda y Jaecoo"
+                        >
                             <img src="/images/logoomodayjaecoo.png" alt="Omoda y Jaecoo" style={{ height: "150px" }} />
                         </a>
-                        <a href="https://www.opelborjamotor.com/" target="_blank" rel="noopener noreferrer">
+                        <a 
+                            href="https://www.opelborjamotor.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Sitio web de Opel"
+                        >
                             <img src="/images/logoopel.png" alt="Opel" style={{ height: "150px" }} />
                         </a>
                     </div>

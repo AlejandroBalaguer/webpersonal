@@ -35,26 +35,60 @@ const Contact = () => {
                 </p>
 
                 <div className="d-flex gap-3 mb-4">
-                    <a href="https://www.instagram.com/aleexbalaguer" target="_blank" rel="noreferrer" className="text-success fs-3">
-                        <i className="bi bi-instagram"></i>
+                    <a 
+                        href="https://www.instagram.com/aleexbalaguer" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="text-success fs-3"
+                        aria-label="Instagram"
+                    >
+                        <i className="bi bi-instagram" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/alejandro-balaguer-moroño" target="_blank" rel="noreferrer" className="text-success fs-3">
-                        <i className="bi bi-linkedin"></i>
+                    <a 
+                        href="https://www.linkedin.com/in/alejandro-balaguer-moroño" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="text-success fs-3"
+                        aria-label="LinkedIn"
+                    >
+                        <i className="bi bi-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/AlejandroBalaguer" target="_blank" rel="noreferrer" className="text-success fs-3">
-                        <i className="bi bi-github"></i>
+                    <a 
+                        href="https://github.com/AlejandroBalaguer" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="text-success fs-3"
+                        aria-label="GitHub"
+                    >
+                        <i className="bi bi-github" aria-hidden="true"></i>
                     </a>
                 </div>
-
+                
                 <form action="https://formsubmit.co/alejandrobalaguerm@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false" />
                     <div className="mb-3">
-                        <label className="form-label">{t('email')}</label>
-                        <input type="email" name="email" className="form-control bg-dark text-light border-success" required />
+                        <label htmlFor="email-input" className="form-label">{t('email')}</label>
+                        <input 
+                            id="email-input"
+                            type="email" 
+                            name="email" 
+                            className="form-control bg-dark text-light border-success" 
+                            required 
+                            aria-describedby="email-help"
+                        />
+                        <div id="email-help" className="form-text">
+                            {t('emailPrivacy')}
+                        </div>
                     </div>
                     <div className="mb-3">
-                        <label className="form-label">{t('message')}</label>
-                        <textarea name="message" className="form-control bg-dark text-light border-success" rows="4" required></textarea>
+                        <label htmlFor="message-input" className="form-label">{t('message')}</label>
+                        <textarea 
+                            id="message-input"
+                            name="message" 
+                            className="form-control bg-dark text-light border-success" 
+                            rows="4" 
+                            required
+                        ></textarea>
                     </div>
                     <button type="submit" className="btn btn-success">{t('send')}</button>
                 </form>

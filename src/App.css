@@ -33,6 +33,49 @@
   outline: 0 !important;
 }
 
+/* Estilos mejorados para accesibilidad */
+
+/* Para asegurar que todos los enlaces enfocados son visibles */
+a:focus, a:focus-visible {
+  outline: 3px solid rgba(40, 167, 69, 0.5) !important;
+  outline-offset: 2px !important;
+  text-decoration: none !important;
+}
+
+/* Mejorar visibilidad del foco en elementos interactivos */
+button:focus, 
+input:focus, 
+textarea:focus, 
+select:focus,
+[role="button"]:focus {
+  outline: 3px solid rgba(40, 167, 69, 0.5) !important;
+  outline-offset: 2px !important;
+}
+
+/* Estilo para enlaces de redes sociales - indica interactividad */
+.social-link:hover, .social-link:focus {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Clase para ocultar visualmente pero mantener accesible para lectores de pantalla */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Mejorar contraste para texto de ayuda */
+.form-text {
+  color: #adb5bd !important; /* Asegura suficiente contraste para texto de ayuda */
+}
+
 /* Clase para ocultar visualmente elementos pero mantenerlos accesibles para lectores de pantalla */
 .visually-hidden {
   position: absolute !important;
