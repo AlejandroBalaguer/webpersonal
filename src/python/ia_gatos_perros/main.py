@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # Cargar el modelo
-model = load_model("modelo_perros_gatos.keras")
+model = load_model("./src/python/ia_gatos_perros/modelo_perros_gatos.keras")
 
 # Preprocesar imagen
 def preprocess_image(image_bytes):

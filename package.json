@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "frontend": "vite --host",
+    "requirements": "py -m pip install -r requirements.txt",
     "backend": "py -m uvicorn src.python.ia_gatos_perros.main:app --reload --port 8000",
-    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "dev": "concurrently \"npm run frontend\" \"npm run requirements\" \"npm run backend\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
