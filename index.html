@@ -1,13 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alejandro Balaguer Moroño</title>
+    <meta name="description" content="Portfolio personal de Alejandro Balaguer Moroño - Desarrollador web y profesional de tecnología" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Alejandro Balaguer Moroño" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Alejandro Balaguer Moroño | Portafolio Personal</title>
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="preload" href="/src/App.css" as="style" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Google Lighthouse sugiere cargar scripts no críticos de forma diferida -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -8,9 +8,11 @@
     "requirements": "py -m pip install -r requirements.txt",
     "backend": "py -m uvicorn src.python.ia_gatos_perros.main:app --reload --port 8000",
     "dev": "concurrently \"npm run frontend\" \"npm run requirements\" \"npm run backend\"",
-    "build": "vite build",
+    "build": "vite build --minify esbuild --outDir dist",
+    "analyze": "vite build --mode analyze",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lighthouse": "lighthouse http://localhost:4173 --view"
   },
   "dependencies": {
     "axios": "^1.8.4",
