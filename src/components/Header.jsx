@@ -38,10 +38,14 @@ const Header = () => {
                         </li>
                         <li className="nav-item justify-content-center">
                             <select
-                                className="form-select bg-dark text-light border-success"
+                                className="form-select custom-language-select text-light border-success"
                                 onChange={(e) => changeLanguage(e.target.value)}
                                 value={i18n.language}
-                                style={{ width: "auto" }}
+                                style={{ 
+                                    width: "auto", 
+                                    backgroundColor: "#212529",
+                                    paddingRight: "2rem"
+                                }}
                             >
                                 <option value="es">ES</option>
                                 <option value="en">EN</option>
