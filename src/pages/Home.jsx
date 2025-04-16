@@ -12,7 +12,7 @@ const Home = () => {
                     <div className="col-md-5 text-center">
                         <Zoom>
                             <img
-                                src="/images/logo.jpg"
+                                src="/images/unnamed.jpg"
                                 alt={t('name')}
                                 className="rounded-circle border border-success shadow img-fluid mb-3"
                                 style={{ height: "180px" }}

@@ -8,7 +8,7 @@ const Curriculum = () => {
         <main className="container py-5">
             <section id="home" className="text-center py-5 px-5">
                 <Zoom>
-                    <img src="/images/logo.jpg" alt="Foto" className="rounded-circle border border-success mt-3 img-fluid" style={{ height: "300px" }}/>
+                    <img src="/images/unnamed.jpg" alt="Foto" className="rounded-circle border border-success mt-3 img-fluid" style={{ height: "300px" }}/>
                     <h1 className="text-success display-3">{t('name')}</h1>
                     <p className="lead">{t('role')}</p>
                     <a
