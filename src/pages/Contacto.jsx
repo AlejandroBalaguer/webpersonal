@@ -41,6 +41,9 @@ const Contact = () => {
                     <a href="https://www.linkedin.com/in/alejandro-balaguer-moroño" target="_blank" rel="noreferrer" className="text-success fs-3">
                         <i className="bi bi-linkedin"></i>
                     </a>
+                    <a href="https://github.com/AlejandroBalaguer" target="_blank" rel="noreferrer" className="text-success fs-3">
+                        <i className="bi bi-github"></i>
+                    </a>
                 </div>
 
                 <form action="https://formsubmit.co/alejandrobalaguerm@gmail.com" method="POST">
