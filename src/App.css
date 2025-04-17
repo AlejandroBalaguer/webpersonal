@@ -95,7 +95,7 @@ select:focus,
   outline-offset: 2px !important;
 }
 body {
-    background-image: url("../src/assets/background.jpg");
+    background-image: url("../src/assets/background.webp");
     background-repeat: no-repeat;        /* Evita que se repita */
     background-size: cover;              /* Ajusta el tamaño manteniendo proporciones */
     background-position: center center;  /* Centra la imagen */
