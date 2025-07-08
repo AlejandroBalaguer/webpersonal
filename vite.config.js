@@ -12,7 +12,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
-          'ui-vendor': ['bootstrap', 'react-bootstrap'],
         },
       },
     },

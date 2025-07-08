@@ -30,7 +30,7 @@ const Curriculum = () => {
                 <Slide direction="right">
                     <h2 className="text-info">{t('experience')}</h2>
                     <ul className="list-unstyled">
-                        <li><strong className="text-success">Borjamotor S.A.</strong> - Desarrollo web - 2025 - Presente</li>
+                        <li><strong className="text-success">Borjamotor S.A.</strong> - Desarrollo web - Marzo 2025 - Junio 2025</li>
                         <li><strong className="text-success">Grupo SpaServ</strong> - Administrador de sistemas - 2023 - 2024</li>
                     </ul>
                 </Slide>
