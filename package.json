@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "frontend": "vite --host",
-    "requirements": "py -m pip install -r requirements.txt",
-    "dev": "concurrently \"npm run frontend\" \"npm run requirements\"",
+    "dev": "npm run frontend",
     "build": "vite build --minify esbuild --outDir dist",
     "analyze": "vite build --mode analyze",
     "lint": "eslint .",
