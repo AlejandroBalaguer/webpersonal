@@ -30,32 +30,6 @@ const Projects = () => {
                 <p>
                     {t('classifierDesc')}
                 </p>
-                <p className="text-success"><b>{t('howToUse')}:</b></p>
-                <p>
-                    {t('howToUseText')}
-                </p>
-                <div className="mb-3">
-                    <label htmlFor="image-upload" className="form-label">
-                        {t('uploadImage')}:
-                    </label>
-                    <input 
-                        type="file" 
-                        id="image-upload"
-                        className="form-control" 
-                        accept="image/*"
-                        aria-describedby="image-upload-help"
-                        onChange={(e) => setImagen(e.target.files[0])} 
-                    />
-                </div>
-                <button className="btn btn-success mt-3" onClick={handleSubmit}>{t('classify')}</button>
-
-                {cargando && <p className="mt-3">{t('analyzing')}</p>}
-
-                {resultado && (
-                    <div className="mt-4">
-                        <h4 className="text-success">{resultado.resultado}</h4>
-                    </div>
-                )}
 
                 <p className="py-2">{t('repository')}: <a href="https://github.com/AlejandroBalaguer/CatsvsDogs">https://github.com/AlejandroBalaguer/CatsvsDogs</a></p>
 

@@ -1,4 +1,0 @@
-Acceder a IA gatos y perros
-
-Ejecutar:
-uvicorn main:app --reload --port 8000

@@ -25,11 +25,6 @@
   "projects": "Proyectos",
   "classifier": "Clasificador de Perros y Gatos",
   "classifierDesc": "Esta es una IA sencilla que clasifica la imagen que subas como un gato o un perro. Tiene una precisión superior al 90%.",
-  "howToUse": "Cómo usarlo",
-  "howToUseText": "Solo tienes que subir tu imagen y luego hacer clic en 'Clasificar'. El resultado aparecerá en breve.",
-  "classify": "Clasificar",
-  "analyzing": "Analizando imagen...",
   "webProjects": "Páginas web en las que he trabajado",
-  "repository": "Repositorio",
-  "uploadImage": "Subir imagen"
+  "repository": "Repositorio"
 }
